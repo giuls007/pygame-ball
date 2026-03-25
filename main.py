@@ -59,7 +59,6 @@ def draw_end_screen(surface: pygame.Surface, won: bool):
 
 
 def draw_hud(surface: pygame.Surface, remaining: float, lives: int):
-    # 1. Timer testo
     timer_text = font_medium.render(f"{int(remaining)}", True, TEXT_COLOR)
     text_rect = timer_text.get_rect(centerx=SCREEN_W // 2, top=10)
     surface.blit(timer_text, text_rect)
