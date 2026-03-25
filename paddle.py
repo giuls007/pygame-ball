@@ -21,7 +21,6 @@ class Paddle:
         if keys[pygame.K_RIGHT]:
             self.rect.x += PADDLE_SPEED
 
-        # Blocca ai bordi
         if self.rect.left < 0:
             self.rect.left = 0
         if self.rect.right > self._screen_w:
